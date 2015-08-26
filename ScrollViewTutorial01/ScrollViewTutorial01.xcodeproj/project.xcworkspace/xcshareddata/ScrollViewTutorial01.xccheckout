@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AFDAD23F-4918-4167-B7E6-D28A3D81B94A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScrollViewTutorial01</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>84354333B966A0FBA19ED5A3816ED93870E503CA</key>
+		<string>https://github.com/pablomarcos/Blog.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScrollViewTutorial01/ScrollViewTutorial01.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>84354333B966A0FBA19ED5A3816ED93870E503CA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pablomarcos/Blog.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>84354333B966A0FBA19ED5A3816ED93870E503CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>84354333B966A0FBA19ED5A3816ED93870E503CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Blog</string>
+		</dict>
+	</array>
+</dict>
+</plist>

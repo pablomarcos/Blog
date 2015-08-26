@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         // Calculamos la altura de la pantalla
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenHeight: CGFloat = screenSize.height
+        println("La pantalla mide: \(screenHeight)")
         
         // Recorremos el array de textFields en busca de quien tiene el foco
         for textField in textFields {
@@ -66,11 +67,22 @@ class ViewController: UIViewController {
                 let yPositionMaxField = yPositionField + heightField
                 // Calculate max Y position for a view that is not hidden
                 let Ymax = screenHeight - keyboardHeight
-                
+                println("El textField llega hasta: \(yPositionMaxField), la Ymax es: \(Ymax)")
                 // Comprobamos si nuestra 'Y' máxima del UITextField es superior a la Ymax
                 if Ymax < yPositionMaxField {
-                    // El UITextField queda oculto por el teclado, entonces movemos el Scroll View
-                    scrollView.setContentOffset(CGPointMake(0, self.keyboardHeight - 20), animated: true)
+                    // Comprobar si la 'Ymax' el UITextField es más grande que el tamaño de la pantalla
+                    if yPositionMaxField > screenHeight {
+                        let diff = yPositionMaxField - screenHeight
+                        println("El UITextField se sale por debajo \(diff) unidades")
+                        // Hay que añadir la distancia a la que está por debajo el UITextField ya que se sale del screen height
+                        scrollView.setContentOffset(CGPointMake(0, self.keyboardHeight + diff), animated: true)
+                    }else{
+                        // El UITextField queda oculto por el teclado, entonces movemos el Scroll View
+                        scrollView.setContentOffset(CGPointMake(0, self.keyboardHeight - 20), animated: true)
+                    }
+                    
+                }else{
+                    println("NO MUEVO EL SCROLL")
                 }
             }
         }
@@ -83,7 +95,6 @@ class ViewController: UIViewController {
         var info:NSDictionary = notification.userInfo!
         var keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
         keyboardHeight = keyboardSize.height
-        println("El teclado se va a mostrar y tiene una altura de: \(keyboardSize.height)")
         setScrollViewPosition()
     }
     

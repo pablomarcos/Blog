@@ -13,22 +13,22 @@
                         <viewControllerLayoutGuide type="bottom" id="A75-U0-y4O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FEy-Q6-qZY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcY-ri-8oH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmf-oc-ers" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciP-0O-gOy">
-                                                <rect key="frame" x="8" y="28" width="359" height="30"/>
+                                                <rect key="frame" x="8" y="28" width="304" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Mn-L0-K89">
-                                                <rect key="frame" x="8" y="593" width="359" height="30"/>
+                                                <rect key="frame" x="8" y="593" width="304" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -65,7 +65,7 @@
                             <constraint firstItem="vmf-oc-ers" firstAttribute="height" secondItem="FEy-Q6-qZY" secondAttribute="height" priority="250" id="tKS-uR-fIL"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="Wa9-8J-ADZ" id="AgD-HL-KKD"/>
                         <outlet property="firstTextField" destination="ciP-0O-gOy" id="tzs-aI-3Vs"/>
